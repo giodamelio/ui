@@ -1,6 +1,7 @@
 package ui
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/nsf/termbox-go"
@@ -30,6 +31,11 @@ func (ui *UI) Run() {
 			if event.Key == termbox.KeyCtrlC {
 				cleanExit()
 			}
+
+			if event.Ch == 'a' {
+				fmt.Println("Got a 'a'")
+			}
+			fmt.Println(event.Ch)
 		}
 	}
 }
