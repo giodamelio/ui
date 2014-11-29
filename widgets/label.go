@@ -6,7 +6,7 @@ import (
 	"github.com/nsf/termbox-go"
 )
 
-// A simple text label
+// A Label widget
 type Label struct {
 	Text string
 	X    int

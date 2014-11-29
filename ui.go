@@ -16,7 +16,7 @@ type UI struct {
 	currentView string
 }
 
-// Add a view
+// AddView adds a view to our UI
 func (ui *UI) AddView(view View) {
 	// If our views list does not exist, create it
 	if ui.views == nil {
@@ -27,7 +27,7 @@ func (ui *UI) AddView(view View) {
 	ui.views[view.Name] = view
 }
 
-// Show a view
+// ShowView shows a view by name
 func (ui *UI) ShowView(viewName string) {
 	ui.currentView = viewName
 }
